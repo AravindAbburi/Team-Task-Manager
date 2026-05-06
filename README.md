@@ -23,6 +23,8 @@ A streamlined, role-based project and task management system built with React, V
 
 ## 📖 How to Use
 
+> **Crucial Requirement**: You must add a member to a project **before** you can assign any tasks to them within that project.
+
 ### 1. Authentication
 - Sign up or sign in using your email.
 - **Admin Access**: Currently restricted to specific verified emails:
@@ -30,11 +32,12 @@ A streamlined, role-based project and task management system built with React, V
 ### 2. Managing Projects (Admins Only)
 - Go to the **Projects** tab.
 - Click **"New Project"** to create a project workspace.
-- Inside a project, use the **"Add Member"** button to invite team members by their email.
+- **Important**: Inside the project page, use the **"Add Member"** button to invite team members. A user must be a member of the project to receive tasks.
 
-### 3. Creating Tasks
-- **In a Project**: Click **"New Task"** within any project you are a member of.
-- **From Members Page (Admins)**: Click **"Assign Task"** next to any member to create and assign a task to them instantly.
+### 3. Creating and Assigning Tasks
+- **Prerequisite**: Ensure the target member has been added to the project first.
+- **From Members Page**: Click **"Assign Task"** next to any member. You will select a project they are part of and create the task.
+- **In a Project**: Click **"New Task"** within the project board to create and assign tasks to any project member.
 
 ### 4. Tracking Progress
 - View all your assigned tasks across all projects in the **"My Tasks"** tab.
