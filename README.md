@@ -2,6 +2,8 @@
 
 A streamlined, role-based project and task management system built with React, Vite, and Supabase.
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/AravindAbburi/Team-Task-Manager)
+
 ## 🚀 Features
 
 - **Role-Based Access Control**:
@@ -38,7 +40,18 @@ A streamlined, role-based project and task management system built with React, V
 - View all your assigned tasks across all projects in the **"My Tasks"** tab.
 - Use the **Dashboard** for an overview of total, in-progress, completed, and overdue tasks.
 
-## 💻 Local Development
+## � Workflow Example
+
+To help you get started, here is a typical workflow:
+
+1. **Setup**: An Admin (`aa956@snu.edu.in`) logs in and creates a project named "Website Redesign".
+2. **Invite**: The Admin goes to the "Members" page and sees that "John Doe" has signed up. The Admin adds John to the "Website Redesign" project.
+3. **Assign**: From the "Members" page, the Admin clicks **Assign Task** next to John's name, creates a task "Design Homepage Mockup", and assigns it to the "Website Redesign" project.
+4. **Member Action**: John logs in, goes to **My Tasks**, sees the "Design Homepage Mockup" task, and moves it from "To Do" to "In Progress".
+5. **Collaboration**: John realizes he also needs to "Export Assets", so he goes to the project page and creates that task himself.
+6. **Completion**: Once finished, John moves the tasks to "Done". The Admin sees the updated progress on the **Dashboard**.
+
+## �� Local Development
 
 1. **Install Dependencies**:
    ```bash
