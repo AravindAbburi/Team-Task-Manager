@@ -1,4 +1,4 @@
-# Tasker — Team Task Manager
+# Task Manager — Team Task Hub
 
 A streamlined, role-based project and task management system built with React, Vite, and Supabase.
 
@@ -17,7 +17,6 @@ A streamlined, role-based project and task management system built with React, V
 - **Frontend**: React 18, Vite, TypeScript
 - **Styling**: Tailwind CSS, Shadcn UI
 - **Backend**: Supabase (Auth & Database)
-- **Icons**: Lucide React
 - **Date Handling**: date-fns
 
 ## 📖 How to Use
@@ -25,9 +24,7 @@ A streamlined, role-based project and task management system built with React, V
 ### 1. Authentication
 - Sign up or sign in using your email.
 - **Admin Access**: Currently restricted to specific verified emails:
-  - `aa956@snu.edu.in`
-  - `aravind.abburi@snu.edu.in`
-
+  - `aa956@snu.edu.in`/ Password: 'Venkayamma@2005'
 ### 2. Managing Projects (Admins Only)
 - Go to the **Projects** tab.
 - Click **"New Project"** to create a project workspace.

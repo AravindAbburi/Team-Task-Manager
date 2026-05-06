@@ -38,7 +38,7 @@ const AppLayout = () => {
             <div className="w-8 h-8 rounded-lg bg-primary text-primary-foreground flex items-center justify-center">
               <CheckSquare className="w-4 h-4" />
             </div>
-            <span className="font-semibold tracking-tight">Tasker</span>
+            <span className="font-semibold tracking-tight">Task Manager</span>
           </div>
         </div>
         <nav className="flex-1 p-2 space-y-0.5">

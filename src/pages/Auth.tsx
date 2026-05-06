@@ -66,14 +66,14 @@ const Auth = () => {
           <div className="w-9 h-9 rounded-lg bg-primary text-primary-foreground flex items-center justify-center">
             <CheckSquare className="w-5 h-5" />
           </div>
-          <span className="text-xl font-semibold tracking-tight">Tasker</span>
+          <span className="text-xl font-semibold tracking-tight">Task Manager</span>
         </div>
         <Card className="p-8 shadow-sm">
           <h1 className="text-2xl font-semibold mb-1">
             {mode === "signin" ? "Welcome back" : "Create your account"}
           </h1>
           <p className="text-sm text-muted-foreground mb-6">
-            {mode === "signin" ? "Sign in to continue to Tasker" : "Start managing your team's work"}
+            {mode === "signin" ? "Sign in to continue to Task Manager" : "Start managing your team's work"}
           </p>
           <form onSubmit={submit} className="space-y-4">
             {mode === "signup" && (
