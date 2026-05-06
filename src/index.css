@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+
+    --primary: 235 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 13%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 13% 13%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 235 85% 60%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 220 14% 98%;
+    --sidebar-foreground: 220 13% 25%;
+    --sidebar-primary: 235 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 94%;
+    --sidebar-accent-foreground: 220 13% 13%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 235 85% 60%;
+
+    --status-todo: 220 9% 46%;
+    --status-progress: 38 92% 50%;
+    --status-done: 142 71% 45%;
+  }
+
+  .dark {
+    --background: 220 13% 9%;
+    --foreground: 220 14% 96%;
+    --card: 220 13% 11%;
+    --card-foreground: 220 14% 96%;
+    --popover: 220 13% 11%;
+    --popover-foreground: 220 14% 96%;
+    --primary: 235 85% 65%;
+    --primary-foreground: 220 13% 9%;
+    --secondary: 220 13% 16%;
+    --secondary-foreground: 220 14% 96%;
+    --muted: 220 13% 16%;
+    --muted-foreground: 220 9% 60%;
+    --accent: 220 13% 16%;
+    --accent-foreground: 220 14% 96%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 235 85% 65%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-background text-foreground; font-feature-settings: "cv11", "ss01"; }
+  h1,h2,h3,h4 { @apply tracking-tight; font-weight: 600; }
+}
+
+@layer components {
+  .status-dot { @apply inline-block w-2 h-2 rounded-full; }
+}
